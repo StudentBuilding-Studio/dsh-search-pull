@@ -1,7 +1,7 @@
 {
   "name": "dsh-search-pull",
   "version": "0.1.0",
-  "description": "Raise the agent's tendency to call the built-in web_search: a search-first rule section plus a visible per-turn nudge that goes quiet as soon as a search happens.",
+  "description": "A static prompt section that makes the agent reach for the built-in web_search before answering questions about existing libraries, versions, errors or selection, plus an optional JSONL audit trail.",
   "type": "module",
   "main": "index.js",
   "exports": {
