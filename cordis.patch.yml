@@ -4,13 +4,13 @@
 # `dsh.client`. The row is inserted under the package's own name, which the
 # Loader resolves from the profile's installed bundles.
 #
-# `config` below only turns on the JSONL audit trail. Delete the whole `config`
-# mapping to run on the built-in defaults; the audit file is the only way to
-# see what the plugin decided, because the injected nudge stays out of the
-# chat transcript by design.
+# No `config` here on purpose. The defaults are the intended behaviour, and any
+# config written here ships to every user, including paths that only exist on
+# one machine. To turn on the optional JSONL audit trail, add this to your own
+# profile's copy of the row:
+#
+#   config:
+#     debugFile: /path/you/choose/search-pull-trace.jsonl
 - insert:
     - id: dsh-search-pull
       name: 'dsh-search-pull'
-      config:
-        debug: true
-        debugFile: D:/git/dsh-search-pull/trace.jsonl

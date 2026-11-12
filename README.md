@@ -55,7 +55,7 @@ dsh plugin --profile web remove dsh-search-pull
 
 ## 验证方式
 
-```bash
-# 规则是否真的进了 prompt（会话日志里搜得到）
-python -c "..."   # 或直接看 trace.jsonl 里的 mount / search-observed
-```
+装好后所有回合都带着这条规则，不需要额外确认。想看它有没有真的影响行为，两种办法：
+
+1. 问一个开发类问题（「XX 库现在推荐哪个版本」），看它有没有先调 `web_search`；
+2. 开启 `debugFile`，审计文件里会有 `mount` 和每次 `search-observed` 一行。
