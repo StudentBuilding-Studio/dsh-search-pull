@@ -12,7 +12,8 @@
     "index.js",
     "cordis.patch.yml",
     "README.md",
-    "icon.svg"
+    "icon.svg",
+    "assets/icon-512.png"
   ],
   "engines": {
     "node": ">=20"
