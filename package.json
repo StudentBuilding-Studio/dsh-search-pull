@@ -1,0 +1,42 @@
+{
+  "name": "dsh-search-pull",
+  "version": "0.1.0",
+  "description": "Raise the agent's tendency to call the built-in web_search: a search-first rule section plus a visible per-turn nudge that goes quiet as soon as a search happens.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "icon.svg"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-search",
+    "search-first"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "author": "StudentBuilding-Studio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StudentBuilding-Studio/dsh-search-pull.git"
+  },
+  "homepage": "https://github.com/StudentBuilding-Studio/dsh-search-pull",
+  "bugs": {
+    "url": "https://github.com/StudentBuilding-Studio/dsh-search-pull/issues"
+  }
+}

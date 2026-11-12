@@ -1,0 +1,16 @@
+# Bundle patch for dsh-search-pull.
+#
+# Host-only: there is no client half, so nothing is auto-discovered from
+# `dsh.client`. The row is inserted under the package's own name, which the
+# Loader resolves from the profile's installed bundles.
+#
+# `config` below only turns on the JSONL audit trail. Delete the whole `config`
+# mapping to run on the built-in defaults; the audit file is the only way to
+# see what the plugin decided, because the injected nudge stays out of the
+# chat transcript by design.
+- insert:
+    - id: dsh-search-pull
+      name: 'dsh-search-pull'
+      config:
+        debug: true
+        debugFile: D:/git/dsh-search-pull/trace.jsonl
