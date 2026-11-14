@@ -24,7 +24,13 @@
 
 ## 安装 / 卸载
 
-从 GitHub 装（`--profile` 换成你自己的 profile 名，桌面端通常是 `desktop`，命令行版通常是 `web`）：
+从 npm 装（推荐，预构建包不需要构建授权）：
+
+```bash
+dsh plugin --profile web add dsh-search-pull
+```
+
+或直接从 GitHub 装：
 
 ```bash
 dsh plugin --profile web add https://github.com/StudentBuilding-Studio/dsh-search-pull
@@ -36,7 +42,7 @@ dsh plugin --profile web add https://github.com/StudentBuilding-Studio/dsh-searc
 dsh plugin --profile web remove dsh-search-pull
 ```
 
-（还没发 npm；发了之后可以直接 `add dsh-search-pull`。）
+`--profile` 换成你自己的 profile 名：桌面端通常是 `desktop`，命令行版通常是 `web`。
 
 ## 配置
 
