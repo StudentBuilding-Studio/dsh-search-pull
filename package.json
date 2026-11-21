@@ -1,7 +1,8 @@
 {
   "name": "dsh-search-pull",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A static prompt section that makes the agent reach for the built-in web_search before answering questions about existing libraries, versions, errors or selection, plus an optional JSONL audit trail.",
+  "icon": "icon.svg",
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -26,11 +27,6 @@
     "search-first"
   ],
   "license": "MIT",
-  "dsh": {
-    "bundle": {
-      "patch": "./cordis.patch.yml"
-    }
-  },
   "author": "StudentBuilding-Studio",
   "repository": {
     "type": "git",
@@ -39,5 +35,10 @@
   "homepage": "https://github.com/StudentBuilding-Studio/dsh-search-pull",
   "bugs": {
     "url": "https://github.com/StudentBuilding-Studio/dsh-search-pull/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
   }
 }
